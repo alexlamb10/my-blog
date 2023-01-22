@@ -52,15 +52,10 @@ export default () => (
     render={data => (
       <header className={styles.container}>
         <div className={styles.row}>
-          <HomeButton to="/" text={data.site.siteMetadata.title} />
-          <SocialButton site="github" username="alexlamb10"></SocialButton>
-          <SocialButton site="linkedin" username="alexlambdev"></SocialButton>
-          <SocialButton site="twitter" username="alexlambdev"></SocialButton>
-        </div>
-        <div className={styles.row}>
-          <HeaderLink to="/" text="ARTICLES" />
-          <HeaderLink to="/about" text="ABOUT" />
-          <HeaderLink to="/blog-posts" text="Blog" />
+          <HeaderLink to="/" text="ALEX LAMB" />
+          <HeaderLink to="/about" text="RESUME" />
+          {/* <HeaderLink to="/blog-posts" text="BLOG" /> */}
+          <HeaderLink to="/contact" text="CONTACT" />
         </div>
       </header>
     )}
