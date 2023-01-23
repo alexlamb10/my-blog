@@ -1,16 +1,27 @@
 @import '../styles/global';
 
 .container {
-  max-width: $site-width;
-  min-height: 140px;
-  margin: 0 auto;
-  padding-top: 30px;
-  margin-top: 50px;
+  height: 5vh;
+  margin: 0;
+  right: 0;
+  padding-top: 0;
+  margin-top: 0;
+  background-color: aqua;
+  display: flex;
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  .row {
-    text-align: center;
-    padding: 5px;
+  .other{
+    margin-right: 3vw;
   }
+
+  .home{
+    margin-left: 3vw;
+  }
+
 
   .button {
     background-color: $color-pallete-1;
@@ -77,4 +88,10 @@
 
   }
 
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    display: none;
+  }
 }
