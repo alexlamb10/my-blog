@@ -4,5 +4,9 @@ import Layout from "../components/layout"
 import Title from "../components/title"
 
 export default function About() {
-  return <Layout>This is still a page</Layout>
+  return (
+    <Layout>
+      <Title text="My Resume" />
+    </Layout>
+  )
 }

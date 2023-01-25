@@ -32,8 +32,9 @@ export default () => (
           <HeaderLink to="/" text="ALEX LAMB" />
         </div>
         <div className={styles.other}>
+          <HeaderLink to="/" text="HOME" />
           <HeaderLink to="/about" text="RESUME" />
-          <HeaderLink to="/blog-posts" text="BLOG" />
+          {/* <HeaderLink to="/blog-posts" text="BLOG" /> */}
           <HeaderLink to="/contact" text="CONTACT" />
         </div>
       </header>
