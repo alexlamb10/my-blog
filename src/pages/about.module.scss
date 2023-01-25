@@ -1,13 +1,24 @@
+@import '../styles/global';
+
 .main-area{
     display: flex;
     width: 60vw;
     justify-content: space-between;
     align-items: center;
 
-    p{
-        width: 30vw;
-    }
+}
 
+.resume{
+    background-color: $color-pallete-2;
+    color: white;
+    font-weight: bold;
+    padding: 1vh;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.resume:hover{
+    background-color: $color-pallete-1;
 }
 
 .my-picture{

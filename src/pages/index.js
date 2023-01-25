@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Title from "../components/title"
 import ArticleList from "../components/article-list"
 import picture from "../images/picture.jpg"
-import * as styles from "./about.module.scss"
+import * as styles from "./index.module.scss"
 
 export default function Home() {
   return (
