@@ -1,15 +1,18 @@
 @import '../styles/global';
 
 .container {
-  max-width: $site-width;
   height: 5vh;
+  background-color: $color-pallete-1;
   margin: 0;
   padding-top: 0;
   margin-top: 0;
 
   .row {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 5px;
   }
 
   .button {

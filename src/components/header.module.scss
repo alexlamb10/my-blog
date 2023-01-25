@@ -6,7 +6,7 @@
   right: 0;
   padding-top: 0;
   margin-top: 0;
-  background-color: aqua;
+  background-color: $color-pallete-1;
   display: flex;
   text-align: center;
   padding: 5px;
@@ -71,7 +71,7 @@
   }
 
   .link {
-    color: $color-pallete-1;
+    color: white;
     
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17px;
