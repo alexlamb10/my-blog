@@ -1,7 +1,7 @@
 import { Link, StaticQuery, graphql } from "gatsby"
 import React from "react"
 import { siteMetadata } from "../../gatsby-config"
-import * as styles from "./header.module.scss"
+import * as styles from "./footer.module.scss"
 import title from "./title"
 
 const HeaderLink = props => (

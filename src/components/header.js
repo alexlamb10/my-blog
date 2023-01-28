@@ -2,10 +2,9 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import React from "react"
 import { siteMetadata } from "../../gatsby-config"
 import * as styles from "./header.module.scss"
-import title from "./title"
 
 const HeaderLink = props => (
-  <Link className={styles.link} to={props.to}>
+  <Link className={styles.link} activeClassName={styles.active} to={props.to}>
     {props.text}
   </Link>
 )
@@ -15,28 +14,6 @@ const HomeButton = props => (
     <div className={styles.button}>{props.text}</div>
   </Link>
 )
-
-const SocialButton = props => {
-  let style = ""
-  let url = ""
-
-  if (props.site === "twitter") {
-    style = styles.buttonTwitter
-    url = "https://twitter.com/" + props.username
-  } else if (props.site === "linkedin") {
-    style = styles.buttonLinkedin
-    url = "https://www.linkedin.com/in/" + props.username
-  } else if (props.site === "github") {
-    style = styles.buttonGithub
-    url = "https://www.github.com/" + props.username
-  }
-
-  return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
-      <div className={style}>{props.children}&nbsp;</div>
-    </a>
-  )
-}
 
 export default () => (
   <StaticQuery
@@ -51,12 +28,29 @@ export default () => (
     `}
     render={data => (
       <header className={styles.container}>
-        <div className={styles.row}>
+        <div className={styles.home}>
           <HeaderLink to="/" text="ALEX LAMB" />
-          <HeaderLink to="/about" text="RESUME" />
-          {/* <HeaderLink to="/blog-posts" text="BLOG" /> */}
-          <HeaderLink to="/contact" text="CONTACT" />
         </div>
+        <input type="checkbox" id="checkbox" className={styles.checkbox} />
+        <label htmlFor="checkbox" id={styles.icon}>
+          <hr />
+          <hr />
+          <hr />
+        </label>
+        <ul className={styles.other}>
+          <li>
+            <HeaderLink to="/" text="HOME" />
+          </li>
+          <li>
+            <HeaderLink to="/about" text="RESUME" />
+          </li>
+          <li>
+            <HeaderLink to="/blog-posts" text="BLOG" />
+          </li>
+          <li>
+            <HeaderLink to="/contact" text="CONTACT" />
+          </li>
+        </ul>
       </header>
     )}
   />
