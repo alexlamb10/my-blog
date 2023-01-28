@@ -1,108 +1,4 @@
 @import '../styles/global';
-
-// .container {
-//   height: 5vh;
-//   margin: 0;
-//   right: 0;
-//   padding-top: 0;
-//   margin-top: 0;
-//   background-color: $color-pallete-1;
-//   display: flex;
-//   text-align: center;
-//   padding: 5px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-
-//   .other{
-//     margin-right: 3vw;
-//   }
-
-//   .other a {
-//     font-size: 14px;
-//   }
-
-//   .home{
-//     margin-left: 3vw;
-//   }
-//   .home a {
-//     font-size: 23px;
-//   }
-
-
-//   .button {
-//     background-color: $color-pallete-1;
-//     display: inline-block;
-//     font-family: Verdana, Geneva, Tahoma, sans-serif;
-//     font-size: 12px;
-//     text-transform: uppercase;
-//     color: white;
-//     font-weight: bold;
-//     height: 30px;
-//     min-width: 15px;
-//     line-height: 30px;
-//     padding-left: 10px;
-//     margin-right: 10px;
-//     padding-right: 10px;
-    
-//     margin-bottom: 10px;
-
-//       &:hover {
-//         background-color: $color-pallete-2;
-//       }
-
-//   }
-
-//   .button-icon {
-//     @extend .button;
-//     background-size: 16px 16px;
-//     background-repeat: no-repeat;
-//     background-position: center center;
-//   }
-
-//   .button-github {
-//     @extend .button-icon;
-//     background-image: url('../images/github.png');
-    
-//   }
-
-//   .button-twitter {
-//     @extend .button-icon;
-//     background-image: url('../images/twitter.png');
-//     margin-right: 0px;
-//   }
-
-//   .button-linkedin {
-//     @extend .button-icon;
-//     background-image: url('../images/linkedin.png');
-//   }
-
-//   .link {
-//     color: white;
-    
-//     font-family: Verdana, Geneva, Tahoma, sans-serif;
-//     font-size: 17px;
-//     font-weight: bold;
-//     text-decoration: none;
-
-//     &:hover {
-//       color: $color-pallete-2;
-//     }
-
-//     &:not(:last-child) {
-//       padding-right: 30px;
-//     }
-
-//   }
-
-// }
-
-// @media screen and (max-width: 768px){
-//   .container{
-//     display: none;
-//   }
-// }
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -148,7 +44,7 @@
           }
         }
       }
-      .active a{
+      .active{
           background: $color-pallete-2;
           color: $color-pallete-1;
         }
@@ -163,9 +59,51 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
   hr{
     width: 100%;
     margin: 0;
   }
 }
 
+.checkbox,#icon{
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container{
+    ul{
+      position: absolute;
+      width: 100%;
+      height: 50vh;
+      background-color: $color-pallete-1;
+      left: 0;
+      top: 0;
+      text-align: center;
+      display: none;
+      margin-top: 55px;
+
+      li{
+        margin-right: 10%;
+        display: block;
+        padding: 10px 15px;
+
+        a{
+          display: block;
+          padding: 10px 0;
+        }
+      }
+    }
+    
+    #icon{
+      position: absolute;
+      right: 0;
+      display: flex;
+      margin-right: 3%;
+    }
+  }
+  .checkbox:checked~ul{
+    display: block;
+  }
+}

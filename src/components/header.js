@@ -2,10 +2,9 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import React from "react"
 import { siteMetadata } from "../../gatsby-config"
 import * as styles from "./header.module.scss"
-import { Bars3Icon } from "@heroicons/react/20/solid"
 
 const HeaderLink = props => (
-  <Link className={styles.link} to={props.to}>
+  <Link className={styles.link} activeClassName={styles.active} to={props.to}>
     {props.text}
   </Link>
 )
@@ -32,14 +31,14 @@ export default () => (
         <div className={styles.home}>
           <HeaderLink to="/" text="ALEX LAMB" />
         </div>
-        <input type="checkbox" id="checkbox" />
+        <input type="checkbox" id="checkbox" className={styles.checkbox} />
         <label htmlFor="checkbox" id={styles.icon}>
           <hr />
           <hr />
           <hr />
         </label>
         <ul className={styles.other}>
-          <li className={styles.active}>
+          <li>
             <HeaderLink to="/" text="HOME" />
           </li>
           <li>
