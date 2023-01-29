@@ -42,7 +42,7 @@ export default () => (
             <HeaderLink to="/" text="HOME" />
           </li>
           <li>
-            <HeaderLink to="/about" text="RESUME" />
+            <HeaderLink to="/resume" text="RESUME" />
           </li>
           <li>
             <HeaderLink to="/blog-posts" text="BLOG" />

@@ -1,13 +1,5 @@
 @import '../styles/global';
 
-.main-area{
-    display: flex;
-    width: 60vw;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
 .resume{
     background-color: $color-pallete-2;
     color: white;
@@ -21,6 +13,21 @@
     background-color: $color-pallete-1;
 }
 
-.my-picture{
-    width: 25vw;
+.title{
+    font-size: 30px;
+    padding-bottom: 1vh;
+    border-bottom: 1px solid $color-pallete-1;
+    color: $color-pallete-1;
+}
+
+.company{
+    display: flex;
+
+    .subtitle{
+    margin-left: 5%;
+    }
+
+    .city{
+        font-weight: lighter;
+    }
 }
