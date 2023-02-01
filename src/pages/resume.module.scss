@@ -22,12 +22,31 @@
 
 .company{
     display: flex;
-
+    
     .subtitle{
-    margin-left: 5%;
+    margin: 1vh 0 1vh 5%;
     }
 
     .city{
         font-weight: lighter;
+        margin: 1vh 0;
+    }
+}
+
+.position{
+    margin: 0 0 1vh 8%;
+    font-style: italic;
+}
+.project{
+    margin: 0 0 1vh 6%;
+    
+}
+
+.list {
+    margin: 0;
+    list-style-type:'- ';
+
+    li{
+        margin-bottom: .5vh;
     }
 }
