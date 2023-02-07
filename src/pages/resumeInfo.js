@@ -3,24 +3,30 @@ let resumeInfo = [
     sectionTitle: "Education",
     title: "Devmountain",
     location: "Lehi, UT",
-    startDate: "Feb 2022",
-    endDate: "May 2022",
+    startDate: null,
+    endDate: null,
+    graduationDate: "May 2022",
     jobTitle: null,
     project: null,
     details: ["16-week immersive Web Development Program"],
+    projectLink: null,
+    projectLinkTitle: null,
   },
   {
     sectionTitle: null,
     title: "Weber State University",
     location: "Ogden, UT",
-    startDate: "Aug 2020",
-    endDate: "Dec 2020",
+    startDate: null,
+    endDate: null,
+    graduationDate: "Aug 2020 - Dec 2021",
     jobTitle: null,
     project: null,
     details: [
       "Associates Degree - General Studies",
       "Earned High Honor Roll during each semester at Weber State University",
     ],
+    projectLink: null,
+    projectLinkTitle: null,
   },
   {
     sectionTitle: "Professional Experience",
@@ -28,6 +34,7 @@ let resumeInfo = [
     location: "Centerville, UT",
     startDate: "Aug 2022",
     endDate: "Current",
+    graduationDate: null,
     jobTitle: "Web Developer I",
     project: null,
     details: [
@@ -35,6 +42,8 @@ let resumeInfo = [
       "Used HTML, CSS, and Javascript to build functional components for the customer to use on a daily basis.",
       "Utilized problem-solving skills to produce creative solutions to tasks given to me.",
     ],
+    projectLink: null,
+    projectLinkTitle: null,
   },
   {
     sectionTitle: null,
@@ -42,6 +51,7 @@ let resumeInfo = [
     location: "Lehi, UT",
     startDate: "Feb 2022",
     endDate: "May 2022",
+    graduationDate: null,
     jobTitle: "Web Developer / Software Engineer (student)",
     project: "Sell Monkey",
     details: [
@@ -49,6 +59,8 @@ let resumeInfo = [
       "Protected user data with Auth0 for a secure way to log in to the application.",
       "Used Stripe to allow users to purchase items with debit or credit cards securely.",
     ],
+    projectLink: "https://github.com/alexlamb10/sell-monkey",
+    projectLinkTitle: "Sell Monkey Repo.",
   },
   {
     sectionTitle: null,
@@ -56,6 +68,7 @@ let resumeInfo = [
     location: null,
     startDate: null,
     endDate: null,
+    graduationDate: null,
     jobTitle: null,
     project: "Trip Planner",
     details: [
@@ -63,6 +76,8 @@ let resumeInfo = [
       "Provided authentication and user credentials using Bcrypt to ensure each user’s profile security.",
       "Used AWS S3 allowing users to upload pictures to the database upon completing a pre-saved trip.",
     ],
+    projectLink: "https://github.com/alexlamb10/devmountain-capstone-1",
+    projectLinkTitle: "Trip Planner Repo.",
   },
   {
     sectionTitle: null,
@@ -70,6 +85,7 @@ let resumeInfo = [
     location: "Ogden, UT",
     startDate: "Dec 2020",
     endDate: "Feb 2022",
+    graduationDate: null,
     jobTitle: "Member Service Representative",
     project: null,
     details: [
@@ -78,6 +94,8 @@ let resumeInfo = [
       "Implemented new techniques to improve how I communicated with clients through training provided by the company in order to give each client a better experience.",
       "Worked on a team in which I strived to be uplifting to each of my coworkers in order for them to feel comfortable in the work environment each day.",
     ],
+    projectLink: null,
+    projectLinkTitle: null,
   },
   {
     sectionTitle: "Service/Leadership",
@@ -85,6 +103,7 @@ let resumeInfo = [
     location: "Port Vila, Vanuatu",
     startDate: "Aug 2018",
     endDate: "April 2020",
+    graduationDate: null,
     jobTitle: "Full-Time Missionary",
     project: null,
     details: [
@@ -93,6 +112,8 @@ let resumeInfo = [
       "Developed a strong work ethic as I worked 10 hours a day to meet personal goals.",
       "Became fluent in speaking, writing, and reading Bislama.",
     ],
+    projectLink: null,
+    projectLinkTitle: null,
   },
 ]
 

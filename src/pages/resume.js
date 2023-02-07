@@ -9,6 +9,9 @@ import { a } from "../../.cache/dummy"
 
 export default function About() {
   let resume = resumeInfo.map((element, index) => {
+    let detailList = element.details.map((element, index) => {
+      return <li>{element}</li>
+    })
     return (
       <div>
         <h1 className={element.sectionTitle ? styles.title : styles.hide}>
@@ -25,12 +28,18 @@ export default function About() {
         <p className={element.jobTitle ? styles.position : styles.hide}>
           {element.jobTitle} | {element.startDate} - {element.endDate}
         </p>
+        <p className={element.graduationDate ? styles.position : styles.hide}>
+          {element.graduationDate}
+        </p>
         <p className={element.project ? styles.project : styles.hide}>
           <u>{element.project}</u>
         </p>
-        {/* <ul className={styles.list}>
-          <li>16-week immersive Web Development Program.</li>
-        </ul> */}
+        <ul className={styles.list}>
+          {detailList}
+          <li className={!element.projectLink ? styles.hide : ""}>
+            <a href={element.projectLink}>{element.projectLinkTitle}</a>
+          </li>
+        </ul>
       </div>
     )
   })
