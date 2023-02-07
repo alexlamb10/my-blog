@@ -12,7 +12,9 @@
 .resume:hover{
     background-color: $color-pallete-1;
 }
-
+.hide{
+    display: none;
+}
 .title{
     font-size: 30px;
     padding-bottom: 1vh;

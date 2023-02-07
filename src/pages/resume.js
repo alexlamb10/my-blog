@@ -4,16 +4,44 @@ import Layout from "../components/layout"
 import Title from "../components/title"
 import * as styles from "./resume.module.scss"
 import resumePdf from "../images/resume.pdf"
+import resumeInfo from "./resumeInfo"
 import { a } from "../../.cache/dummy"
 
 export default function About() {
+  let resume = resumeInfo.map((element, index) => {
+    return (
+      <div>
+        <h1 className={element.sectionTitle ? styles.title : styles.hide}>
+          {element.sectionTitle}
+        </h1>
+        <div className={styles.company}>
+          <h3 className={element.title ? styles.subtitle : styles.hide}>
+            {element.title}&nbsp;{" "}
+          </h3>
+          <h3 className={element.location ? styles.city : styles.hide}>
+            | {element.location}
+          </h3>
+        </div>
+        <p className={element.jobTitle ? styles.position : styles.hide}>
+          {element.jobTitle} | {element.startDate} - {element.endDate}
+        </p>
+        <p className={element.project ? styles.project : styles.hide}>
+          <u>{element.project}</u>
+        </p>
+        {/* <ul className={styles.list}>
+          <li>16-week immersive Web Development Program.</li>
+        </ul> */}
+      </div>
+    )
+  })
+
   return (
     <Layout>
       <Title text="My Resume" />
       <a href={resumePdf} download>
         <button className={styles.resume}>Download Resume</button>
       </a>
-      <h1 className={styles.title}>Education</h1>
+      {/* <h1 className={styles.title}>Education</h1>
       <div className={styles.company}>
         <h3 className={styles.subtitle}>Devmountain&nbsp; </h3>
         <h3 className={styles.city}>| Lehi, UT</h3>
@@ -133,7 +161,9 @@ export default function About() {
         </li>
       </ul>
       <h1 className={styles.title}>Skills</h1>
-      <h1 className={styles.title}>Service/Leadership</h1>
+      <h1 className={styles.title}>Service/Leadership</h1> */}
+
+      {resume}
     </Layout>
   )
 }
