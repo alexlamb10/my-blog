@@ -1,0 +1,45 @@
+@import '../styles/global';
+
+.fields {
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .field {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 5vh;
+        label{
+            font-size: larger;
+            margin-bottom: 1vh;
+            color: $color-pallete-1;
+        }
+
+        .half{
+            display: flex;
+            flex-direction: column;
+            input{
+                border: 1px solid $color-pallete-1;
+                height: 2.5vh;
+                border-radius: 5px;
+            }
+        }
+
+        .messages{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            textarea{
+                height: 10vh;
+                border: 1px solid $color-pallete-1;
+                border-radius: 5px;
+            }
+        }
+
+    }
+}
