@@ -29,19 +29,21 @@ export default function Contact() {
               <textarea name="message" id="message" rows="4"></textarea>
             </div>
           </div>
+          <div className={styles.field}>
+            <ul className={styles.actions}>
+              <li>
+                <input
+                  type="submit"
+                  value="Send Message"
+                  className={styles.primary}
+                />
+              </li>
+              <li>
+                <input className={styles.reset} type="reset" value="Reset" />
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul className={styles.actions}>
-          <li>
-            <input
-              type="submit"
-              value="Send Message"
-              className={styles.primary}
-            />
-          </li>
-          <li>
-            <input type="reset" value="Reset" />
-          </li>
-        </ul>
       </form>
     </Layout>
   )

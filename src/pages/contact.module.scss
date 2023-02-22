@@ -41,5 +41,31 @@
             }
         }
 
+        .actions{
+            width: 100%;
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+
+            .reset{
+                margin-left: 3vw;
+            }
+
+            li input{
+                background-color: $color-pallete-2;
+                color: white;
+                font-weight: bold;
+                padding: 1vh;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+            }
+
+            li input:hover{
+                background-color: $color-pallete-1;
+            }
+        }
+
     }
 }
