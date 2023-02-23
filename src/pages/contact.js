@@ -19,9 +19,22 @@ export default function Contact() {
               <p>
                 If you would like to contact me, feel free to fill out the form
                 below. You can also reach out to me through{" "}
-                <a href="https://twitter.com/alexlambdev">Twitter</a> or{" "}
-                <a href="www.linkedin.com/in/alexlambdev">LinkedIn</a>. I'll get
-                back to you as soon as I can.
+                <a
+                  href="https://twitter.com/alexlambdev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
+                </a>{" "}
+                or{" "}
+                <a
+                  href="https://linkedin.com/in/alexlambdev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+                . I'll get back to you as soon as I can.
               </p>
             </div>
           </div>

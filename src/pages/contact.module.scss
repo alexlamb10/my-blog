@@ -81,3 +81,13 @@
 
     }
 }
+
+@media screen and (max-width: 600px) {
+    .page{
+        width: 90%;
+
+    }
+    .fields{
+        width: 100%;
+    }
+}
