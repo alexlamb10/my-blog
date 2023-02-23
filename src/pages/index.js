@@ -4,6 +4,7 @@ import Title from "../components/title"
 import ArticleList from "../components/article-list"
 import picture from "../images/picture.jpg"
 import * as styles from "./index.module.scss"
+import { Link } from "gatsby"
 
 export default function Home() {
   return (
@@ -14,13 +15,13 @@ export default function Home() {
         <div>
           <h3>Hey!</h3>
           <p>
-            I'm Alex Lamb, and I am a web developer. I began my professional
-            career in August 2022 after completing the Web Development Bootcamp
-            at Devmountain. I currently work for Justice Works, LLC in Utah.
-            Check out my{" "}
-            <a href="https://docs.google.com/document/d/1IiF6Q_a5vM_LlL9JoqWg59RAJ3BEYVPpJFqq4pBR5XM/edit">
-              resume!
-            </a>
+            I'm Alex! I'm a junior web developer from Ogden, UT. After receiving
+            my Associates at Weber State University, I jumped right into web
+            development at Devmountain, taking the Web Development course, which
+            I completed in May of 2022. When I'm not working, I enjoy spending
+            my down time with family–camping, hiking, traveling, and watching
+            sports. And of course, finding time to code something new. Check out
+            my <Link to="/resume">resume!</Link>
           </p>
         </div>
       </div>

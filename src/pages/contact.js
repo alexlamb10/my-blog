@@ -9,10 +9,22 @@ export default function Contact() {
     <Layout>
       <Title text="Contact" />
       <form
+        className={styles.page}
         method="post"
         action="https://formsubmit.co/0954104084e728e515851decdb5f0142"
       >
         <div className={styles.fields}>
+          <div className={styles.field}>
+            <div className={styles.half}>
+              <p>
+                If you would like to contact me, feel free to fill out the form
+                below. You can also reach out to me through{" "}
+                <a href="https://twitter.com/alexlambdev">Twitter</a> or{" "}
+                <a href="www.linkedin.com/in/alexlambdev">LinkedIn</a>. I'll get
+                back to you as soon as I can.
+              </p>
+            </div>
+          </div>
           <div className={styles.field}>
             <div className={styles.half}>
               <label for="name">Name</label>
