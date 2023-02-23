@@ -37,7 +37,13 @@ export default function About() {
         <ul className={styles.list}>
           {detailList}
           <li className={!element.projectLink ? styles.hide : ""}>
-            <a href={element.projectLink}>{element.projectLinkTitle}</a>
+            <a
+              href={element.projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {element.projectLinkTitle}
+            </a>
           </li>
         </ul>
       </div>

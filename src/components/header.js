@@ -44,9 +44,9 @@ export default () => (
           <li>
             <HeaderLink to="/resume" text="RESUME" />
           </li>
-          <li>
+          {/* <li>
             <HeaderLink to="/blog-posts" text="BLOG" />
-          </li>
+          </li> */}
           <li>
             <HeaderLink to="/contact" text="CONTACT" />
           </li>
