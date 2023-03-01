@@ -12,9 +12,9 @@ export default function Home() {
       <Title text="About Me" />
       <div className={styles.mainArea}>
         <img className={styles.myPicture} src={picture} alt="" />
-        <div>
-          <h3>Hey!</h3>
-          <p>
+        <div className={styles.info}>
+          <h3 className={styles.hey}>Hey!</h3>
+          <p className={styles.paragraph}>
             I'm Alex! I'm a junior web developer from Ogden, UT. After receiving
             my Associates at Weber State University, I jumped right into web
             development at Devmountain, taking the Web Development course, which
