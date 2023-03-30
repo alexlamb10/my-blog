@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Title from "../components/title"
 import * as styles from "./resume.module.scss"
 import resumePdf from "../images/resume.pdf"
-import resumeInfo from "./resumeInfo"
+import resumeInfo from "../components/resumeInfo"
 import { a } from "../../.cache/dummy"
 
 export default function About() {
