@@ -30,6 +30,23 @@ let resumeInfo = [
   },
   {
     sectionTitle: "Professional Experience",
+    title: "Angular Community Meetup",
+    location: "Remote",
+    startDate: "Aug 2022",
+    endDate: "Current",
+    graduationDate: null,
+    jobTitle: "Co-Organizer",
+    project: null,
+    details: [
+      "Took Part in planning and carrying out duties to run a monthly meet up group.",
+      "Composed weekly tweets and emails to notify members of the community of upcoming events.",
+      "Worked with a group of other organizers to find creative ways to expose as many members of the community to the meetup.",
+    ],
+    projectLink: "https://angularcommunity.net/home",
+    projectLinkTitle: "Angular Community Meetup Website",
+  },
+  {
+    sectionTitle: "",
     title: "Justice Works, LLC",
     location: "Centerville, UT",
     startDate: "Aug 2022",
