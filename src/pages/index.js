@@ -15,7 +15,7 @@ export default function Home() {
         <div className={styles.info}>
           <h3 className={styles.hey}>Hey!</h3>
           <p className={styles.paragraph}>
-            I'm Alex! I'm a junior web developer from Ogden, UT. After receiving
+            I'm Alex! I'm a web developer from Ogden, UT. After receiving
             my Associates at Weber State University, I jumped right into web
             development at Devmountain, taking the Web Development course, which
             I completed in May of 2022. When I'm not working, I enjoy spending

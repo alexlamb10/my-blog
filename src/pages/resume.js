@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Title from "../components/title"
 import * as styles from "./resume.module.scss"
-import resumePdf from "../images/resume.pdf"
 import resumeInfo from "../components/resumeInfo"
+import resumeDoc from "../images/ResumeDoc.pdf"
 import { a } from "../../.cache/dummy"
 
 export default function About() {
@@ -53,7 +53,7 @@ export default function About() {
   return (
     <Layout>
       <Title text="My Resume" />
-      <a href={resumePdf} download>
+      <a href={resumeDoc} download>
         <button className={styles.resume}>Download Resume</button>
       </a>
       {resume}
